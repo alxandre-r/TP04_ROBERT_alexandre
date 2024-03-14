@@ -1,0 +1,13 @@
+<ul>
+    <li *ngFor="let carte of cartes">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Nom de la carte : {{carte.nom}}</h5>
+                <p class="card-text"> Code : {{carte.code}}</p>
+                <p class="card-text"> CCV : {{carte.ccv}}</p>
+                <p class="card-text"> Expiration :{{carte.expiration}}</p>
+            </div>
+            <button type="button" class="btn btn-danger" (click)="supprimerCarte(carte)">Supprimer</button>
+        </div>
+    </li>
+</ul>

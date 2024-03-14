@@ -1,0 +1,20 @@
+<!-- Formulaire de saisie des cartes, avec FormBuilder -->
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="nom">Nom de la carte</label>
+    <input type="text" class="form-control" id="nom" formControlName="nom">
+  </div>
+  <div class="form-group">
+    <label for="code">Code de la carte</label>
+    <input type="text" class="form-control" id="code" formControlName="code">
+  </div>
+  <div class="form-group">
+    <label for="ccv">CCV</label>
+    <input type="text" class="form-control" id="ccv" formControlName="ccv">
+  </div>
+  <div class="form-group">
+    <label for="expiration">Mois / Année</label>
+    <input type="text" class="form-control" id="expiration" formControlName="expiration">
+  </div>
+  <button type="submit" class="btn btn-primary">Enregistrer</button>
+</form>
